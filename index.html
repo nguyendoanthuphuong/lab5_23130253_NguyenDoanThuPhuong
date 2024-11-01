@@ -1,0 +1,416 @@
+<html>
+ <head>
+  <title>
+   My Learning
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+        .header a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .nav a.active {
+            border-bottom: 2px solid white;
+        }
+        .filters {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .filters select, .filters input {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .filters input[type="text"] {
+            flex-grow: 1;
+        }
+        .filters button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0073b1;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .course {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .course img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+        .course-content {
+            padding: 15px;
+        }
+        .course-content h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .course-content p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .course-content .progress {
+            margin: 10px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .course-content .rating {
+            display: flex;
+            align-items: center;
+        }
+        .course-content .rating i {
+            color: #f5c518;
+        }
+        .course-content .rating span {
+            margin-left: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <h1>
+    My learning
+   </h1>
+   <p>
+    87hr 36min watched
+    <a href="#">
+     View all activity
+    </a>
+   </p>
+  </div>
+  <div class="nav">
+   <a class="active" href="#">
+    All courses
+   </a>
+   <a href="#">
+    Learning paths
+   </a>
+   <a href="#">
+    Certifications
+   </a>
+   <a href="#">
+    Archived
+   </a>
+   <a href="#">
+    Learning tools
+   </a>
+  </div>
+  <div class="filters">
+   <div>
+    <select>
+     <option>
+      Recently Accessed
+     </option>
+    </select>
+    <select>
+     <option>
+      Categories
+     </option>
+    </select>
+    <select>
+     <option>
+      Progress
+     </option>
+    </select>
+    <select>
+     <option>
+      Instructor
+     </option>
+    </select>
+    <button>
+     Reset
+    </button>
+   </div>
+   <div>
+    <input placeholder="Search my courses" type="text"/>
+    <button>
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+  </div>
+  <div class="courses">
+   <div class="course">
+    <img alt="Information Security Management System" height="200" src="https://storage.googleapis.com/a1aa/image/1twNnLWzJAp6PRLnWeyf4hINJz3wgwVCQfIon3zeBsCForyOB.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      FPT_ISMS Refresh Training S2 2024 (Vietnamese)
+     </h3>
+     <p>
+      FSOFT Content Development
+     </p>
+     <div class="progress">
+      100% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="Spring Boot Development Bootcamp" height="200" src="https://storage.googleapis.com/a1aa/image/lZkkFKaBR5ItFR1RednRqXABBfLpmO0apABIG9Kc6pOL6qsTA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      The Complete Spring Boot Development Bootcamp
+     </h3>
+     <p>
+      Learn The Part Inc., Rayan Slim, Jose...
+     </p>
+     <div class="progress">
+      100% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="MuleSoft 4.X Complete Guide" height="200" src="https://storage.googleapis.com/a1aa/image/LFmZRf4vk6UVZqMDf5zKZHqMB5OujXmII4KBteoYQq9F0VZnA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      MuleSoft 4.X Complete Guide For Beginners- Hands On...
+     </h3>
+     <p>
+      Chinna Reddy
+     </p>
+     <div class="progress">
+      1% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="English Vocabulary: 504 Essential Words" height="200" src="https://storage.googleapis.com/a1aa/image/GPwavIlIgAbqFJe2uoLG7yFSKqNlGLLTUEF6IroKyVDCdV2JA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      English Vocabulary: 504 Essential Words through 7...
+     </h3>
+     <p>
+      Mister Rabiey
+     </p>
+     <div class="progress">
+      15% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Your rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="Build a Backend REST API with Python &amp; Django" height="200" src="https://storage.googleapis.com/a1aa/image/7jRdNBWZi97fdSfmxoinZqnZo14vj9Wqz3OtKvrVIwFI6qsTA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      Build a Backend REST API with Python &amp; Django -...
+     </h3>
+     <p>
+      Instructor Name
+     </p>
+     <div class="progress">
+      0% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="ChatGPT Python Programming: AI Guided" height="200" src="https://storage.googleapis.com/a1aa/image/orzw0Wv5TBZyB56FtS5qWsR4fRDY61WL9GjXwDd8O29CdV2JA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      ChatGPT Python Programming: AI Guided
+     </h3>
+     <p>
+      Instructor Name
+     </p>
+     <div class="progress">
+      0% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="Java Certification (1Z0-819) Topic-wise Tests: Part-1" height="200" src="https://storage.googleapis.com/a1aa/image/wZAWPmI0f6XbJiF8ko1DmaL5x46Kn7uMKOKYugGvifqH6qsTA.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      Java Certification (1Z0-819) Topic-wise Tests: Part-1
+     </h3>
+     <p>
+      Instructor Name
+     </p>
+     <div class="progress">
+      0% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+   <div class="course">
+    <img alt="FPT_PMP Training" height="200" src="https://storage.googleapis.com/a1aa/image/h5y9ikeSfwtJnUaUNsrJffYfVGhQFh7uSXl3xPdECfqRiuK7E.jpg" width="300"/>
+    <div class="course-content">
+     <h3>
+      FPT_PMP Training
+     </h3>
+     <p>
+      FSOFT Content Development
+     </p>
+     <div class="progress">
+      0% complete
+     </div>
+     <div class="rating">
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <i class="fas fa-star">
+      </i>
+      <span>
+       Leave a rating
+      </span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
